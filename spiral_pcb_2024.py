@@ -30,8 +30,8 @@ def calculate_point(idx, steps, inside_radius, width, loopnum, loop_angle, phase
 center_offset_x = 100
 center_offset_y = 100
 
-inside_radius = 33.2
-outside_radius = 45.7
+inside_radius = 38
+outside_radius = 51
 inside_edge_inset = 1.2
 outside_edge_offset = 4
 width = outside_radius-inside_radius
@@ -120,12 +120,12 @@ for loopnum in range(loops):
                         else:
                             tmp_radius = inside_radius+0.15
                         tmp_pt=calculate_point(idx, steps, tmp_radius, width, loopnum, loop_angle, phasenum, phase_angle, angle_offset, center_offset_x, center_offset_y)
-                        # via_list.append(Via(at=tmp_pt, size=.5, drill=.3, net=nets[phasenum].code))
+                        # via_list.append(Via(at=tmp_pt, size=.8, drill=.4, net=nets[phasenum].code))
 
                 # if loopnum == int(loops-1) and phasenum==4 and idx==int(steps/4)+1:
                 #         tmp_pt=calculate_point(idx-0.5, steps, inside_radius-0.75, width, loopnum, loop_angle, phasenum, phase_angle, angle_offset, center_offset_x, center_offset_y)
                 #         segments.append(Segment(start=current_point, end=tmp_pt, layer='F.Cu', net=nets[phasenum].code))
-                #         via_list.append(Via(at=tmp_pt, size=.5, drill=.3, net=nets[phasenum].code))
+                #         via_list.append(Via(at=tmp_pt, size=.8, drill=.4, net=nets[phasenum].code))
                 #         special_via_point_1 = tmp_pt
                 # if loopnum == int(loops-1) and phasenum==5 and idx==int(steps/4)-4:
                 #     segments.append(Segment(start=current_point, end=special_via_point_1, layer='B.Cu', net=nets[phasenum].code))
@@ -147,7 +147,7 @@ for loopnum in range(loops):
 
                 # if phasenum>=phases/2:
                 #     if idx==int(steps/2)+1:
-                #         via_list.append(Via(at=current_point, size=.5, drill=.3, net=nets[phasenum].code))
+                #         via_list.append(Via(at=current_point, size=.8, drill=.4, net=nets[phasenum].code))
                 #         bottom_layer = not bottom_layer
 
 
@@ -156,31 +156,31 @@ for loopnum in range(loops):
                         if idx < 5 or idx > steps-4:
                             bottom_layer = not bottom_layer
                         if idx == 5 or idx == steps-3 or idx == steps/2+5 or idx == steps/2-3:
-                            via_list.append(Via(at=last_point[phasenum], size=.5, drill=.3, net=nets[phasenum].code))
+                            via_list.append(Via(at=last_point[phasenum], size=.8, drill=.4, net=nets[phasenum].code))
                         if steps/2 + 5 > idx > steps/2 - 4:
                             bottom_layer = not bottom_layer
                     else:
                         if idx < 5:
                             bottom_layer = not bottom_layer
                         if idx == 5:
-                            via_list.append(Via(at=last_point[phasenum], size=.5, drill=.3, net=nets[phasenum].code))
+                            via_list.append(Via(at=last_point[phasenum], size=.8, drill=.4, net=nets[phasenum].code))
                 elif phasenum in [2,3]:
                     if loopnum == 1:
                         if steps/2 < idx < steps/2+5:
                             bottom_layer = not bottom_layer
                         if idx == steps/2+5 or idx == 5:
-                            via_list.append(Via(at=last_point[phasenum], size=.5, drill=.3, net=nets[phasenum].code))
+                            via_list.append(Via(at=last_point[phasenum], size=.8, drill=.4, net=nets[phasenum].code))
                         if idx < 5:
                             bottom_layer = not bottom_layer
                     else:
                         if idx == steps-3:
-                            via_list.append(Via(at=last_point[phasenum], size=.5, drill=.3, net=nets[phasenum].code))
+                            via_list.append(Via(at=last_point[phasenum], size=.8, drill=.4, net=nets[phasenum].code))
                         if idx > steps-4:
                             bottom_layer = not bottom_layer
 
                     # pass
                 # elif idx == 5 or idx == steps-3:
-                #     via_list.append(Via(at=last_point[phasenum], size=.5, drill=.3, net=nets[phasenum].code))
+                #     via_list.append(Via(at=last_point[phasenum], size=.8, drill=.4, net=nets[phasenum].code))
                     # bottom_layer = not bottom_layer
 
 
@@ -211,7 +211,7 @@ for loopnum in range(loops):
                 if phasenum in [0,2] and idx in [int(steps/4)+1, int(steps/4)-2]:
                     tmp_pt=calculate_point(idx, steps, inside_radius, width, loopnum, loop_angle, phasenum, phase_angle, angle_offset, center_offset_x, center_offset_y)
                     # segments.append(Segment(start=current_point, end=tmp_pt, layer='F.Cu', net=nets[phasenum].code))
-                    via_list.append(Via(at=tmp_pt, size=.5, drill=.3, net=nets[phasenum].code))
+                    via_list.append(Via(at=tmp_pt, size=.8, drill=.4, net=nets[phasenum].code))
                     special_via_point_1 = tmp_pt
                 if idx in [int(steps/4)-1]:
                     tmp_pt1=calculate_point(idx, steps, inside_radius, width, loopnum, loop_angle, phasenum, phase_angle, angle_offset, center_offset_x, center_offset_y)
@@ -251,7 +251,7 @@ for loopnum in range(tx_loops+1):
         if stepnum == 0 and loopnum==0:
             via_angle = (stepnum+0.15)/tx_steps * math.pi * 2 + tx_angle_offset
             via_point = point_from_radius(via_angle, radius, center_offset_x, center_offset_y)
-            via_list.append(Via(at=via_point, size=.5, drill=.3, net=tx.code))
+            via_list.append(Via(at=via_point, size=.8, drill=.4, net=tx.code))
             tmp_radius = radius + tx_loops*loop_offset_mm + tx_extra_tail_mm
             tail_end_pt = point_from_radius(angle, tmp_radius, center_offset_x, center_offset_y)
             segments.append(Segment(start=current_point, end=tail_end_pt, layer='F.Cu', net=tx.code))

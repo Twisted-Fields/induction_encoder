@@ -1,8 +1,8 @@
 {
   "board": {
-    "active_layer": 0,
+    "active_layer": 31,
     "active_layer_preset": "",
-    "auto_track_width": false,
+    "auto_track_width": true,
     "hidden_netclasses": [],
     "hidden_nets": [],
     "high_contrast_mode": 0,
@@ -64,13 +64,14 @@
       34,
       35,
       36,
-      37
+      37,
+      39
     ],
-    "visible_layers": "00091a0_80000007",
-    "zone_display_mode": 1
+    "visible_layers": "00032a0_80000001",
+    "zone_display_mode": 0
   },
   "meta": {
-    "filename": "project.kicad_prl",
+    "filename": "induction_encoder.kicad_prl",
     "version": 3
   },
   "project": {

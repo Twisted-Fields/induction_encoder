@@ -46,7 +46,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.508
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -427,7 +427,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "project.kicad_pro",
+    "filename": "induction_encoder.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -485,7 +485,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "project.step",
+      "step": "induction_encoder.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""

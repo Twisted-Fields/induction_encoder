@@ -21,8 +21,6 @@
     )
 
     (stroke (width 0) (type solid)) (fill solid) (layer "F.Cu") (tstamp eada75f4-b178-4135-92ce-f63c34819bb3))
-  (fp_rect (start 0.6 -0.35) (end -0.6 0.35)
-    (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd") (tstamp 5a027817-8431-4362-800b-aca789a3452b))
   (pad "1" smd rect (at -0.3 0) (size 0.2 0.2) (layers "F.Cu" "F.Mask")
     (solder_mask_margin -0.5) (tstamp 7c46f02a-1719-4449-bdeb-ce6be3af8adf))
   (pad "2" smd rect (at 0.3 0) (size 0.2 0.2) (layers "F.Cu" "F.Mask")

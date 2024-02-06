@@ -1197,10 +1197,6 @@
     (stroke (width 0) (type default))
     (uuid 46d3da78-3dfc-401a-8acf-2461703fea85)
   )
-  (wire (pts (xy 142.875 157.48) (xy 144.78 157.48))
-    (stroke (width 0) (type default))
-    (uuid 47400f78-7d2a-42fb-a219-5b7d8513083a)
-  )
   (wire (pts (xy 236.22 48.26) (xy 243.205 48.26))
     (stroke (width 0) (type default))
     (uuid 479b2cc2-46c9-4b94-85d0-44ba85b5ff77)
@@ -1561,10 +1557,6 @@
     (stroke (width 0) (type default))
     (uuid 9d4d0e1b-bb21-493c-ae64-dfcfa235c061)
   )
-  (wire (pts (xy 142.875 153.67) (xy 144.78 153.67))
-    (stroke (width 0) (type default))
-    (uuid 9e226b35-efdf-46f4-b372-649df1e06fe6)
-  )
   (wire (pts (xy 228.6 94.615) (xy 232.41 90.805))
     (stroke (width 0) (type default))
     (uuid 9e3e446a-8f6a-482e-8562-21021e70268b)
@@ -1732,10 +1724,6 @@
   (wire (pts (xy 166.37 110.49) (xy 166.37 111.76))
     (stroke (width 0) (type default))
     (uuid c0c358f7-fc54-4168-8128-4b7de7f2ecb4)
-  )
-  (wire (pts (xy 142.875 168.91) (xy 144.78 168.91))
-    (stroke (width 0) (type default))
-    (uuid c1a4458e-03ff-4e66-abfc-6b856618c8ea)
   )
   (wire (pts (xy 155.575 101.6) (xy 155.575 103.505))
     (stroke (width 0) (type default))
@@ -2137,13 +2125,6 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "TX-" (shape input) (at 142.875 168.91 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 40407728-b327-42b4-a9f3-a94f7530d2e9)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 136.1403 168.91 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
   (global_label "COSN" (shape input) (at 54.61 33.655 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 410f600b-17f4-431d-b628-deba390a0d2a)
@@ -2163,13 +2144,6 @@
     (uuid 511a1de4-67f2-4524-b969-2da8ec098059)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 82.0578 76.2 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "2" (shape input) (at 142.875 157.48 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 65f9501d-9466-4451-ab87-c5e854a98779)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 139.2524 157.4006 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
   (global_label "TX+" (shape input) (at 24.765 174.625 180) (fields_autoplaced)
@@ -2242,13 +2216,6 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "1-" (shape input) (at 142.875 153.67 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid cc8b7b0c-abb7-4c76-b627-6766d4555f18)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 137.1079 153.67 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
   (global_label "RDY" (shape input) (at 76.835 31.115 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid d428282f-47bb-4d31-bbb9-6dd75c1bd8a0)
@@ -2295,7 +2262,7 @@
     )
     (pin "1" (uuid 9d977d7b-9a09-4800-bf1a-020677f60812))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR063") (unit 1)
         )
@@ -2339,7 +2306,7 @@
           (reference "C218") (unit 1)
         )
       )
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C24") (unit 1)
         )
@@ -2364,7 +2331,7 @@
     )
     (pin "1" (uuid ec4f3e22-11d7-459e-8e0a-40fd4c0bb5fb))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR061") (unit 1)
         )
@@ -2391,7 +2358,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "H6") (unit 1)
         )
@@ -2421,7 +2388,7 @@
     (pin "2" (uuid 5e7bfbc9-e66b-467e-ad8c-9b708402a520))
     (pin "3" (uuid 1a0e5c4d-253a-462e-8a30-0e70bb16a7e6))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "U4") (unit 1)
         )
@@ -2451,7 +2418,7 @@
           (reference "#PWR04") (unit 1)
         )
       )
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR035") (unit 1)
         )
@@ -2478,7 +2445,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "H3") (unit 1)
         )
@@ -2518,7 +2485,7 @@
           (reference "#PWR0232") (unit 1)
         )
       )
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR038") (unit 1)
         )
@@ -2566,7 +2533,7 @@
           (reference "J202") (unit 1)
         )
       )
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "J2") (unit 1)
         )
@@ -2591,7 +2558,7 @@
     )
     (pin "1" (uuid 8d59be2c-3a57-4e44-a41c-973bc6428905))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR053") (unit 1)
         )
@@ -2620,7 +2587,7 @@
     (pin "1" (uuid c77d1eea-d3ba-4039-9a8e-36cd464fb9cb))
     (pin "2" (uuid d052f6bf-c0f0-427c-b481-71180e08949c))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C40") (unit 1)
         )
@@ -2654,7 +2621,7 @@
           (reference "C3") (unit 1)
         )
       )
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C27") (unit 1)
         )
@@ -2683,7 +2650,7 @@
     (pin "1" (uuid a5ee49a0-e62f-40af-a8e0-e96ef962660e))
     (pin "2" (uuid 0b5b25e0-f1ab-455b-9d56-afef31aa6498))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C16") (unit 1)
         )
@@ -2712,7 +2679,7 @@
     (pin "1" (uuid 90a2864e-3005-4271-9227-dae51d91d472))
     (pin "2" (uuid e4b56820-d275-4d44-bc0a-035c86df578a))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "R11") (unit 1)
         )
@@ -2737,7 +2704,7 @@
     )
     (pin "1" (uuid f3c994fe-16e2-4a72-bbd2-4ee83b49d01d))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR057") (unit 1)
         )
@@ -2766,7 +2733,7 @@
     (pin "1" (uuid 40f74a2e-2dd0-471d-8ea5-1a7f5340f48a))
     (pin "2" (uuid aaf62620-a18f-42c6-a34e-fb22085f19dd))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C29") (unit 1)
         )
@@ -2791,7 +2758,7 @@
     )
     (pin "1" (uuid 4e070222-b283-461d-a740-fc04ec268e7a))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR03") (unit 1)
         )
@@ -2816,7 +2783,7 @@
     )
     (pin "1" (uuid b9e6b2a0-28dd-423a-a88b-e48b81dfc512))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR015") (unit 1)
         )
@@ -2860,7 +2827,7 @@
           (reference "C217") (unit 1)
         )
       )
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C23") (unit 1)
         )
@@ -2890,7 +2857,7 @@
     (pin "2" (uuid 0f9e0f58-3103-4ae0-959b-b43bc9e597f5))
     (pin "3" (uuid 90c859e2-3e55-4933-9296-f57a8c4ba00a))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "U2") (unit 1)
         )
@@ -2915,7 +2882,7 @@
     )
     (pin "1" (uuid 9ba668e4-71a9-4a3a-b2ca-3e555e4a5ae6))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR045") (unit 1)
         )
@@ -2940,7 +2907,7 @@
     )
     (pin "1" (uuid 2dbb1958-6f68-496c-b5ec-906586776ea3))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR059") (unit 1)
         )
@@ -2969,7 +2936,7 @@
     (pin "1" (uuid b516d935-17bd-4fe7-931e-4d2b74f6c373))
     (pin "2" (uuid 22625aab-63e8-4ddf-b9de-99ae22a33bdc))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C11") (unit 1)
         )
@@ -2994,7 +2961,7 @@
     )
     (pin "1" (uuid 9b957270-cd14-48b4-b4e9-fc38a2621e5a))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR032") (unit 1)
         )
@@ -3024,7 +2991,7 @@
     (pin "2" (uuid 23d18247-6959-404a-a51b-9b828c1af127))
     (pin "3" (uuid b8763cde-4d03-44e2-8692-501f5a8a2a7e))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "U8") (unit 1)
         )
@@ -3049,7 +3016,7 @@
     )
     (pin "1" (uuid 3d0c3682-793f-458a-bb63-2bff4c8fa795))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR01") (unit 1)
         )
@@ -3076,7 +3043,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "H1") (unit 1)
         )
@@ -3106,7 +3073,7 @@
     (pin "2" (uuid 2762cf4c-f30f-466c-9462-7c85f34435d3))
     (pin "3" (uuid 457e0665-99fc-4736-9686-342e682b4705))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "U1") (unit 1)
         )
@@ -3131,7 +3098,7 @@
     )
     (pin "1" (uuid 50f16c3b-99b1-416d-a9ec-1dbd4ea37192))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR06") (unit 1)
         )
@@ -3171,7 +3138,7 @@
           (reference "TP201") (unit 1)
         )
       )
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "TP8") (unit 1)
         )
@@ -3201,7 +3168,7 @@
           (reference "#PWR01") (unit 1)
         )
       )
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR025") (unit 1)
         )
@@ -3236,7 +3203,7 @@
           (reference "U1") (unit 1)
         )
       )
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "U3") (unit 1)
         )
@@ -3270,7 +3237,7 @@
           (reference "C1") (unit 1)
         )
       )
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C25") (unit 1)
         )
@@ -3299,7 +3266,7 @@
     (pin "1" (uuid 099b36ef-d25f-4f9f-9b20-f61a5992ccb1))
     (pin "2" (uuid 1830b5c7-d9d8-4dff-b82b-17d7fa627c5e))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C12") (unit 1)
         )
@@ -3339,7 +3306,7 @@
           (reference "#PWR0233") (unit 1)
         )
       )
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR040") (unit 1)
         )
@@ -3368,7 +3335,7 @@
     (pin "1" (uuid 0a0f950d-7d8e-49ce-9566-9ee62a0f51b2))
     (pin "2" (uuid e707c517-ff70-41d0-bc94-f704cd511064))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C1") (unit 1)
         )
@@ -3397,7 +3364,7 @@
     (pin "1" (uuid 66cb70b6-af30-4dcd-b82f-edd181daecc4))
     (pin "2" (uuid 7a309ad0-7081-46e5-b152-7f47f1142b76))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C18") (unit 1)
         )
@@ -3422,7 +3389,7 @@
     )
     (pin "1" (uuid c28ba7b5-9171-4c76-b192-dfaaebaca83a))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR016") (unit 1)
         )
@@ -3462,7 +3429,7 @@
           (reference "TP201") (unit 1)
         )
       )
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "TP7") (unit 1)
         )
@@ -3496,7 +3463,7 @@
           (reference "C3") (unit 1)
         )
       )
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C15") (unit 1)
         )
@@ -3526,7 +3493,7 @@
     (pin "2" (uuid ebadd020-f2f0-47ec-bcdb-cf4e82893747))
     (pin "3" (uuid 0543d47e-ef7d-4f96-a0a8-29e1d7723b71))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "U5") (unit 1)
         )
@@ -3556,7 +3523,7 @@
           (reference "#PWR04") (unit 1)
         )
       )
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR048") (unit 1)
         )
@@ -3581,7 +3548,7 @@
     )
     (pin "1" (uuid abaf3a88-68de-4e84-b555-712032c3e5d6))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR018") (unit 1)
         )
@@ -3606,7 +3573,7 @@
     )
     (pin "1" (uuid 82200dd3-7e01-4fcb-a702-b35d9f9c52f0))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR050") (unit 1)
         )
@@ -3631,7 +3598,7 @@
     )
     (pin "1" (uuid 97d69662-4a42-417d-a7de-1c835c85b1f2))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR058") (unit 1)
         )
@@ -3658,7 +3625,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "H5") (unit 1)
         )
@@ -3688,7 +3655,7 @@
           (reference "#PWR03") (unit 1)
         )
       )
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR024") (unit 1)
         )
@@ -3727,7 +3694,7 @@
           (reference "R56") (unit 1)
         )
       )
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "R10") (unit 1)
         )
@@ -3752,7 +3719,7 @@
     )
     (pin "1" (uuid 8a0bf3da-4b16-40e5-b6cf-f7e5d54b5156))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR028") (unit 1)
         )
@@ -3779,7 +3746,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "H2") (unit 1)
         )
@@ -3814,7 +3781,7 @@
           (reference "U1") (unit 1)
         )
       )
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "U9") (unit 1)
         )
@@ -3839,7 +3806,7 @@
     )
     (pin "1" (uuid 4e9b72bb-6669-4212-a03c-e52e2a7ef991))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR08") (unit 1)
         )
@@ -3864,7 +3831,7 @@
     )
     (pin "1" (uuid 1d80ce9c-34f4-48b7-8add-7b52d86aa75d))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR033") (unit 1)
         )
@@ -3893,7 +3860,7 @@
     (pin "1" (uuid b65c4b11-3fed-4810-9f6f-fd0608e87a2f))
     (pin "2" (uuid 1e287488-b858-4eea-97d9-f506e94dff55))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C9") (unit 1)
         )
@@ -3918,7 +3885,7 @@
     )
     (pin "1" (uuid 8c91dc83-58a4-489f-9488-558d6c240bd7))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR07") (unit 1)
         )
@@ -3947,7 +3914,7 @@
     (pin "1" (uuid a9d74446-42c3-447e-82af-a74dad68927c))
     (pin "2" (uuid f2b52e32-5deb-43ab-8534-594e000b0198))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C37") (unit 1)
         )
@@ -3976,7 +3943,7 @@
     (pin "1" (uuid 9c228d0b-cdf5-4275-ab57-4fb8350ee292))
     (pin "2" (uuid 636f3adb-6c29-4327-99da-c44baa3440ff))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C32") (unit 1)
         )
@@ -4001,7 +3968,7 @@
     )
     (pin "1" (uuid 7880a427-a62a-4dfd-bd2e-37825ee4f951))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR011") (unit 1)
         )
@@ -4036,7 +4003,7 @@
           (reference "U1") (unit 1)
         )
       )
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "U6") (unit 1)
         )
@@ -4065,7 +4032,7 @@
     (pin "1" (uuid 0d7f4810-2122-484c-94dd-de4ac96fb835))
     (pin "2" (uuid 73bec241-2330-44db-b00c-8c792aa981ca))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C8") (unit 1)
         )
@@ -4090,7 +4057,7 @@
     )
     (pin "1" (uuid e9deb07c-e83d-4427-bb08-91a0e1a72c2a))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "TP1") (unit 1)
         )
@@ -4124,7 +4091,7 @@
           (reference "C2") (unit 1)
         )
       )
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C14") (unit 1)
         )
@@ -4149,7 +4116,7 @@
     )
     (pin "1" (uuid a81538a9-ff84-4b28-9c93-4d5f3784be44))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR031") (unit 1)
         )
@@ -4186,7 +4153,7 @@
     (pin "1" (uuid 01824279-a671-4f39-ad7d-1c321cb35b8b))
     (pin "2" (uuid 655452c7-0865-475f-8d8a-ddcbb487457f))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "U12") (unit 1)
         )
@@ -4215,7 +4182,7 @@
     (pin "1" (uuid 472c4cc3-9973-47dc-a4a4-5f8b21662ef2))
     (pin "2" (uuid 6415c9e8-9c02-45dc-83f1-7fbc45f9bae8))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C36") (unit 1)
         )
@@ -4240,7 +4207,7 @@
     )
     (pin "1" (uuid 90b77a47-dc14-4c83-900a-e3670ab2a5e1))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR027") (unit 1)
         )
@@ -4265,7 +4232,7 @@
     )
     (pin "1" (uuid 28741965-429f-4446-8ff1-21241afa0654))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR020") (unit 1)
         )
@@ -4290,7 +4257,7 @@
     )
     (pin "1" (uuid 30613b91-fb10-462d-a83f-fb4a1d9779a1))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR060") (unit 1)
         )
@@ -4330,7 +4297,7 @@
           (reference "TP201") (unit 1)
         )
       )
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "TP4") (unit 1)
         )
@@ -4360,7 +4327,7 @@
           (reference "#PWR01") (unit 1)
         )
       )
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR041") (unit 1)
         )
@@ -4385,7 +4352,7 @@
     )
     (pin "1" (uuid c7b603b6-dc16-4f7a-b5d8-2fe78a7888d5))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR09") (unit 1)
         )
@@ -4414,7 +4381,7 @@
     (pin "1" (uuid da76bcbf-7a0f-4f0f-ac89-c270f4a8c239))
     (pin "2" (uuid 6963a0fa-a0f8-419d-954e-39fe0996cf33))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C30") (unit 1)
         )
@@ -4444,7 +4411,7 @@
           (reference "#PWR02") (unit 1)
         )
       )
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR030") (unit 1)
         )
@@ -4473,7 +4440,7 @@
     (pin "1" (uuid 0495dcf5-c1ec-4d64-becb-a8ff2c4a15a7))
     (pin "2" (uuid 4b8f5397-3551-4827-8920-51f4b19e3125))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C10") (unit 1)
         )
@@ -4502,7 +4469,7 @@
     (pin "1" (uuid c33699ae-7b82-4d3c-af26-6c38f7333c38))
     (pin "2" (uuid 47dc956b-98e8-4cf0-8ed8-b1eaee9c4a65))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C38") (unit 1)
         )
@@ -4542,7 +4509,7 @@
           (reference "#PWR0235") (unit 1)
         )
       )
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR029") (unit 1)
         )
@@ -4571,7 +4538,7 @@
     (pin "1" (uuid e8d1ea43-269c-4066-b763-63d3fa64b3b4))
     (pin "2" (uuid 732e36d8-857e-414c-9ec0-d166f15e6598))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C7") (unit 1)
         )
@@ -4601,7 +4568,7 @@
           (reference "#PWR02") (unit 1)
         )
       )
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR017") (unit 1)
         )
@@ -4626,49 +4593,9 @@
     )
     (pin "1" (uuid e6a44ae1-6d0b-4f54-9ae4-695f4fdaec02))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR064") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:TestPoint") (at 144.78 168.91 270) (unit 1)
-    (in_bom no) (on_board yes) (dnp yes)
-    (uuid 987f3853-a1d3-472e-ab5b-3df0656c149c)
-    (property "Reference" "TP402" (at 149.225 168.91 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "TestPoint" (at 156.845 168.275 90)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm" (at 144.78 173.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 144.78 173.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 51eda78f-cca2-43aa-9009-2c4862b97f5a))
-    (instances
-      (project "RP2040_motor"
-        (path "/10ff4ace-8dac-45ce-94a5-ae8ae7d42914/11bddbd5-e14e-4409-876e-6e46bce03704"
-          (reference "TP402") (unit 1)
-        )
-      )
-      (project "power_and_cpu"
-        (path "/8d16b105-3293-4d6d-a54b-7359568d7527"
-          (reference "TP39") (unit 1)
-        )
-      )
-      (project "supercap"
-        (path "/c96815b7-5107-42d0-b7dc-73f8acaf6bbc"
-          (reference "TP201") (unit 1)
-        )
-      )
-      (project "project"
-        (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
-          (reference "TP9") (unit 1)
         )
       )
     )
@@ -4691,7 +4618,7 @@
     )
     (pin "1" (uuid b8eef765-4b41-4ea5-a510-09012d653aa7))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR012") (unit 1)
         )
@@ -4721,7 +4648,7 @@
           (reference "#PWR01") (unit 1)
         )
       )
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR014") (unit 1)
         )
@@ -4746,7 +4673,7 @@
     )
     (pin "1" (uuid c55060ef-531d-4b7b-8c37-e12a31ddea83))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR051") (unit 1)
         )
@@ -4771,7 +4698,7 @@
     )
     (pin "1" (uuid abf9bac5-84f5-4c21-bfdb-810bcea73a9c))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR056") (unit 1)
         )
@@ -4800,7 +4727,7 @@
     (pin "1" (uuid 14962a0b-d0a1-4572-8139-a7a65929e4fd))
     (pin "2" (uuid 2dd966a5-59e3-440e-9fa6-57c27faf14f9))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C3") (unit 1)
         )
@@ -4825,7 +4752,7 @@
     )
     (pin "1" (uuid 73033009-6662-48d4-a112-b2f91fa3f977))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR05") (unit 1)
         )
@@ -4854,7 +4781,7 @@
     (pin "1" (uuid 34f04d61-abad-4797-8bea-b8ed0a7d368d))
     (pin "2" (uuid dfe5754c-b3bb-4b20-a4df-61e2c977164f))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C31") (unit 1)
         )
@@ -4883,7 +4810,7 @@
     (pin "1" (uuid 00a771d4-084a-4410-b87b-e4f2e29a83f7))
     (pin "2" (uuid bc1dd3c9-b7c7-41a6-8158-2ba606e3090d))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C28") (unit 1)
         )
@@ -4908,7 +4835,7 @@
     )
     (pin "1" (uuid c62434e3-d752-4700-b129-5ef8972ea5ff))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR055") (unit 1)
         )
@@ -4937,7 +4864,7 @@
     (pin "1" (uuid 7712eee8-2480-48d4-983b-cf42505ad28e))
     (pin "2" (uuid ff7704cf-724a-4554-84fb-e6bde7d2e22a))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C35") (unit 1)
         )
@@ -4966,7 +4893,7 @@
     (pin "1" (uuid 574d7188-0029-409c-b418-1a6df77af378))
     (pin "2" (uuid e7ebf962-4a60-46b8-8b45-3310764760e7))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C5") (unit 1)
         )
@@ -4995,7 +4922,7 @@
     (pin "1" (uuid ecb73b86-8180-4090-b0ad-1c5c5cbb21e1))
     (pin "2" (uuid 45f1b474-cdf8-4e54-9e2d-af67494e5ee2))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C4") (unit 1)
         )
@@ -5029,7 +4956,7 @@
           (reference "C3") (unit 1)
         )
       )
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C22") (unit 1)
         )
@@ -5069,7 +4996,7 @@
           (reference "#PWR0243") (unit 1)
         )
       )
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR042") (unit 1)
         )
@@ -5098,7 +5025,7 @@
     (pin "1" (uuid bf780228-48b3-49a5-bc72-26746c1ffc09))
     (pin "2" (uuid 463b9aa7-c621-4f39-b48b-dcf6c7ed9d26))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C39") (unit 1)
         )
@@ -5127,49 +5054,9 @@
     (pin "1" (uuid 0f6e7972-c6a8-48f9-b8e0-66f3fe74c785))
     (pin "2" (uuid 66b9d752-b8ea-464f-a0aa-97900fc6f3c1))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "R12") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:TestPoint") (at 144.78 153.67 270) (unit 1)
-    (in_bom no) (on_board yes) (dnp yes)
-    (uuid b9a86d5e-a372-4bb3-9cdd-342746d8add6)
-    (property "Reference" "TP402" (at 149.225 153.67 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "TestPoint" (at 156.845 153.035 90)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm" (at 144.78 158.75 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 144.78 158.75 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 5f1d09a5-21be-4c58-a4d2-a88906445eab))
-    (instances
-      (project "RP2040_motor"
-        (path "/10ff4ace-8dac-45ce-94a5-ae8ae7d42914/11bddbd5-e14e-4409-876e-6e46bce03704"
-          (reference "TP402") (unit 1)
-        )
-      )
-      (project "power_and_cpu"
-        (path "/8d16b105-3293-4d6d-a54b-7359568d7527"
-          (reference "TP39") (unit 1)
-        )
-      )
-      (project "supercap"
-        (path "/c96815b7-5107-42d0-b7dc-73f8acaf6bbc"
-          (reference "TP201") (unit 1)
-        )
-      )
-      (project "project"
-        (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
-          (reference "TP5") (unit 1)
         )
       )
     )
@@ -5201,7 +5088,7 @@
           (reference "C2") (unit 1)
         )
       )
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C26") (unit 1)
         )
@@ -5226,7 +5113,7 @@
     )
     (pin "1" (uuid 07822e78-3594-4e6a-ac22-1d3b9695d194))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR022") (unit 1)
         )
@@ -5260,7 +5147,7 @@
           (reference "C2") (unit 1)
         )
       )
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C21") (unit 1)
         )
@@ -5290,7 +5177,7 @@
           (reference "#PWR03") (unit 1)
         )
       )
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR039") (unit 1)
         )
@@ -5319,7 +5206,7 @@
     (pin "1" (uuid 46a50cf4-0400-4164-aef9-cd0f30660d67))
     (pin "2" (uuid 94ce3695-8518-4f9f-99d9-d4d5cdbbf111))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C6") (unit 1)
         )
@@ -5348,7 +5235,7 @@
     (pin "1" (uuid 596f147c-db00-4c31-bf5c-8836d5f490b7))
     (pin "2" (uuid cd901990-0a29-4235-b7e0-71ec7904a4e3))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C33") (unit 1)
         )
@@ -5385,7 +5272,7 @@
     (pin "1" (uuid cd7bf612-d727-422e-8598-c0cd623eaa4c))
     (pin "2" (uuid 19356bad-0e69-4ac0-ab58-defbfc86039a))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "U11") (unit 1)
         )
@@ -5412,49 +5299,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "H4") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:TestPoint") (at 144.78 157.48 270) (unit 1)
-    (in_bom no) (on_board yes) (dnp yes)
-    (uuid cd8baefa-e240-465c-aab8-e0fb09b66882)
-    (property "Reference" "TP402" (at 149.225 157.48 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "TestPoint" (at 156.845 156.845 90)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm" (at 144.78 162.56 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 144.78 162.56 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid d6844ed6-c401-4ccd-9b73-3dc16cdf816a))
-    (instances
-      (project "RP2040_motor"
-        (path "/10ff4ace-8dac-45ce-94a5-ae8ae7d42914/11bddbd5-e14e-4409-876e-6e46bce03704"
-          (reference "TP402") (unit 1)
-        )
-      )
-      (project "power_and_cpu"
-        (path "/8d16b105-3293-4d6d-a54b-7359568d7527"
-          (reference "TP39") (unit 1)
-        )
-      )
-      (project "supercap"
-        (path "/c96815b7-5107-42d0-b7dc-73f8acaf6bbc"
-          (reference "TP201") (unit 1)
-        )
-      )
-      (project "project"
-        (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
-          (reference "TP6") (unit 1)
         )
       )
     )
@@ -5481,7 +5328,7 @@
     (pin "1" (uuid ac510353-7140-4972-b0ab-8a64cba1fb0d))
     (pin "2" (uuid d9c2253a-01e7-4180-9f60-05b2204c9101))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C34") (unit 1)
         )
@@ -5511,7 +5358,7 @@
           (reference "#PWR03") (unit 1)
         )
       )
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR013") (unit 1)
         )
@@ -5536,7 +5383,7 @@
     )
     (pin "1" (uuid 876b7173-57f9-4321-859f-690afd84b34d))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR049") (unit 1)
         )
@@ -5565,7 +5412,7 @@
     (pin "1" (uuid 6cb1118b-269f-4062-9c7b-d40afde0c0e9))
     (pin "2" (uuid cc8cb531-e410-4f37-8629-166dd4056fb7))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C17") (unit 1)
         )
@@ -5590,7 +5437,7 @@
     )
     (pin "1" (uuid 77c6e861-446f-44b2-869f-dd02dc673937))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR019") (unit 1)
         )
@@ -5616,7 +5463,7 @@
     (pin "1" (uuid 501a7c47-7d94-42ea-880c-66bfbe20530b))
     (pin "2" (uuid 4d4c7195-ac51-468d-b4af-0f5374c0629f))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "JP2") (unit 1)
         )
@@ -5645,7 +5492,7 @@
     (pin "1" (uuid 932be910-9912-491f-b95a-ca9af2f182de))
     (pin "2" (uuid 22ec1a67-55c3-445e-a508-a399c3c7607d))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C41") (unit 1)
         )
@@ -5670,7 +5517,7 @@
     )
     (pin "1" (uuid b0091c0e-0b5a-4639-87a9-9cc6fe157fd9))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR043") (unit 1)
         )
@@ -5695,7 +5542,7 @@
     )
     (pin "1" (uuid 3569eb7e-457b-4eb2-9e6f-05de4dd56382))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR023") (unit 1)
         )
@@ -5732,7 +5579,7 @@
     (pin "1" (uuid c8c07531-e2aa-46e6-8b54-60b31e37438b))
     (pin "2" (uuid 9e80c8a4-a409-4d13-b002-179165398863))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "U7") (unit 1)
         )
@@ -5757,7 +5604,7 @@
     )
     (pin "1" (uuid 9e7bf287-3eb0-4f17-80dc-7c8ac7e75bec))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR036") (unit 1)
         )
@@ -5783,7 +5630,7 @@
     (pin "1" (uuid f8cbb264-e0b2-49e9-8e42-9e7f15e2f44a))
     (pin "2" (uuid 6538802e-1724-47fb-8d8e-7adc90b9a47f))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "JP1") (unit 1)
         )
@@ -5808,7 +5655,7 @@
     )
     (pin "1" (uuid 5c65873b-1e2c-464d-9fd5-fae369f83cba))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR04") (unit 1)
         )
@@ -5848,7 +5695,7 @@
           (reference "#PWR0243") (unit 1)
         )
       )
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR037") (unit 1)
         )
@@ -5878,7 +5725,7 @@
           (reference "#PWR02") (unit 1)
         )
       )
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR044") (unit 1)
         )
@@ -5903,7 +5750,7 @@
     )
     (pin "1" (uuid cd43e4f3-8315-40e8-bdef-d9ed3c256347))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR02") (unit 1)
         )
@@ -5928,7 +5775,7 @@
     )
     (pin "1" (uuid 22fd3e19-bf16-426f-afce-8ebe9b39283c))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR010") (unit 1)
         )
@@ -5953,7 +5800,7 @@
     )
     (pin "1" (uuid d5340ccf-39c3-4605-9848-122b134a2625))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR062") (unit 1)
         )
@@ -5978,7 +5825,7 @@
     )
     (pin "1" (uuid 7ed2c4ed-8d11-4427-9ac7-1abe2906a3d6))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR026") (unit 1)
         )
@@ -6018,7 +5865,7 @@
     (pin "8" (uuid 489abec1-ea4b-49c2-a313-4f52ec732bb9))
     (pin "9" (uuid 6059d800-67b4-4788-b87c-c12e72e1fb8e))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "U10") (unit 1)
         )
@@ -6048,7 +5895,7 @@
           (reference "#PWR04") (unit 1)
         )
       )
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR021") (unit 1)
         )
@@ -6073,7 +5920,7 @@
     )
     (pin "1" (uuid 08526263-ff84-48d5-baee-c350724f51df))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR052") (unit 1)
         )
@@ -6098,7 +5945,7 @@
     )
     (pin "1" (uuid 50daea4e-c689-42da-8f05-32d617fea65e))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR054") (unit 1)
         )
@@ -6123,7 +5970,7 @@
     )
     (pin "1" (uuid be512f06-ebd3-4c74-8473-16aca5066077))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "#PWR034") (unit 1)
         )
@@ -6152,7 +5999,7 @@
     (pin "1" (uuid eef01cff-e4f1-45b8-a328-c5884277f4ec))
     (pin "2" (uuid bef8e2ae-070a-49f1-9b08-1a5d91b19a7b))
     (instances
-      (project "project"
+      (project "induction_encoder"
         (path "/d9811158-3eac-4809-83c8-08ccc99a69d0"
           (reference "C2") (unit 1)
         )
