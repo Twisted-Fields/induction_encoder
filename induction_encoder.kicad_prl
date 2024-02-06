@@ -1,8 +1,8 @@
 {
   "board": {
-    "active_layer": 42,
+    "active_layer": 0,
     "active_layer_preset": "",
-    "auto_track_width": true,
+    "auto_track_width": false,
     "hidden_netclasses": [],
     "hidden_nets": [],
     "high_contrast_mode": 0,
@@ -66,8 +66,8 @@
       36,
       37
     ],
-    "visible_layers": "0009480_80000007",
-    "zone_display_mode": 0
+    "visible_layers": "00091a0_80000007",
+    "zone_display_mode": 1
   },
   "meta": {
     "filename": "project.kicad_prl",
