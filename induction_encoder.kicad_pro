@@ -528,7 +528,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "induction_encoder.step",
+      "step": "../../Downloads/induction_encoder.step",
       "svg": "",
       "vrml": ""
     },
