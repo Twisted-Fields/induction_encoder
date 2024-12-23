@@ -30,8 +30,8 @@ def calculate_point(idx, steps, inside_radius, width, loopnum, loop_angle, phase
 center_offset_x = 100
 center_offset_y = 100
 
-inside_radius = 62
-outside_radius = 85
+inside_radius = 69
+outside_radius = 88
 inside_edge_inset = 1.2
 outside_edge_offset = 4
 width = outside_radius-inside_radius
